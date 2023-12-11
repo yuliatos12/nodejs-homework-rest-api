@@ -54,7 +54,7 @@ const login = async(req, res) => {
 const getCurrent = async(req, res) => {
     const {email, subscription} = req.user;
 
-    register.json({
+    res.json({
         email,
         subscription,
     })
